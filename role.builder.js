@@ -5,7 +5,7 @@ module.exports = {
         
         // No construction sites, idle around spawn
         if (!sites.length) {
-            creep.moveTo(Game.spawns['Spawn1'])
+            creep.moveTo(Game.spawns['mainSpawn'])
             return
         }
         
