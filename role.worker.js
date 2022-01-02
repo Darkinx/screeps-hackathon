@@ -1,3 +1,5 @@
+// This is the multipurpose way to make every creeps on the go
+
 module.exports = {
     /** @param {Creep} creep **/
     run: function(creep) {

@@ -4,11 +4,6 @@ let roleTower = require('role.tower')
 let roleWorker = require('role.worker')
 let util = require('util')
 
-
-// TODOs:
-// Add construction sites and build buildings
-
-
 module.exports.loop = function () {
     // This should only ever run once per "active" room
     for (const name in Game.rooms) {
@@ -50,4 +45,10 @@ module.exports.loop = function () {
             roleWorker.run(creep)
         }
     }
+
+    // TODOs:
+    // Add Attacker creeps
+    // Add walls, buildings, construction sites
+    // Auto search energy source (probably done by Zaptos)
+    // Will continue the code on my own I guess due to the complexity how Zaptos use Javascript to its full potential
 }
